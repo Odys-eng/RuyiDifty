@@ -317,7 +317,7 @@ def update_library_indexes(
             + relative_md
             + "\n",
         )
-        manifest.write_text(text, encoding="utf-8")
+    manifest.write_text(text, encoding="utf-8")
 
     navigation = library_root / "00-navigation" / "index.md"
     nav_text = navigation.read_text(encoding="utf-8")
